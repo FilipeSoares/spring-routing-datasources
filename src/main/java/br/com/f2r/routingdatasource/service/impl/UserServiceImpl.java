@@ -13,6 +13,7 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import br.com.f2r.routingdatasource.model.CustomUserDetails;
 import br.com.f2r.routingdatasource.model.Profile;
 import br.com.f2r.routingdatasource.model.User;
 import br.com.f2r.routingdatasource.repository.UserRepository;
@@ -57,8 +58,12 @@ public class UserServiceImpl implements UserService, UserDetailsService{
         if(user==null){
             throw new UsernameNotFoundException("Username not found");
         }
-            return new org.springframework.security.core.userdetails.User(user.getLogin(), user.getPassword(), 
-                 true, true, true, true, getGrantedAuthorities(user));
+            //return new org.springframework.security.core.userdetails.User(user.getLogin(), user.getPassword(), 
+            //     true, true, true, true, getGrantedAuthorities(user));
+            
+        return new CustomUserDetails(user.getLogin(), user.getPassword(), 
+                true, true, true, true, getGrantedAuthorities(user), user.getPersistenceUnit());
+            
     }
  
      

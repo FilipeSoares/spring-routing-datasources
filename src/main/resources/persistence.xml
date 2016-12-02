@@ -4,15 +4,6 @@
 	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
 	<persistence-unit name="default">
 		<provider>org.hibernate.ejb.HibernatePersistence</provider>
-		<class>br.com.financer.model.AbstractFinancerBusinessObject</class>
-		<class>br.com.financer.model.impl.User</class>
-		<class>br.com.financer.model.impl.Account</class>
-		<class>br.com.financer.model.impl.Bank</class>
-		<class>br.com.financer.model.impl.Card</class>
-		<class>br.com.financer.model.impl.Category</class>
-		<class>br.com.financer.model.impl.Launch</class>
-		<class>br.com.financer.model.impl.Invoice</class>
-		<class>br.com.financer.model.impl.Profile</class>
 		<properties>
 			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect" />
 			<property name="hibernate.show_sql" value="true" />

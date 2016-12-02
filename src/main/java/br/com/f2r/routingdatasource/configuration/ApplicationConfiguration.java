@@ -41,18 +41,18 @@ public class ApplicationConfiguration extends WebMvcConfigurerAdapter{
 	 public void addResourceHandlers(ResourceHandlerRegistry registry) {
 		 registry.addResourceHandler("/resources/**").addResourceLocations("/resources/");
 	 }
-	
+	/*
 	@Bean
 	public DriverManagerDataSource myDataSource(){
 		DriverManagerDataSource datasource = new DriverManagerDataSource();
-		datasource.setDriverClassName(enviroiment.getRequiredProperty("jdbc.driverClassName.0"));
+		datasource.setDriverClassName(enviroiment.getRequiredProperty("jdbc.driverClassName"));
 		datasource.setUrl(enviroiment.getRequiredProperty("jdbc.url.0"));
-		datasource.setUsername(enviroiment.getRequiredProperty("jdbc.username.0"));
-		datasource.setPassword(enviroiment.getRequiredProperty("jdbc.password.0"));
+		datasource.setUsername(enviroiment.getRequiredProperty("jdbc.username"));
+		datasource.setPassword(enviroiment.getRequiredProperty("jdbc.password"));
 		Properties connectionProperties = new Properties();
-		connectionProperties.setProperty("hibernate.dialect", enviroiment.getRequiredProperty("hibernate.dialect.0"));
-		connectionProperties.setProperty("hibernate.show_sql", enviroiment.getRequiredProperty("hibernate.show_sql.0"));
-		connectionProperties.setProperty("hibernate.format_sql", enviroiment.getRequiredProperty("hibernate.format_sql.0"));
+		connectionProperties.setProperty("hibernate.dialect", enviroiment.getRequiredProperty("hibernate.dialect"));
+		connectionProperties.setProperty("hibernate.show_sql", enviroiment.getRequiredProperty("hibernate.show_sql"));
+		connectionProperties.setProperty("hibernate.format_sql", enviroiment.getRequiredProperty("hibernate.format_sql"));
 		datasource.setConnectionProperties(connectionProperties);
 		return datasource;
 	}
@@ -72,6 +72,6 @@ public class ApplicationConfiguration extends WebMvcConfigurerAdapter{
 		transactionManager.setEntityManagerFactory(entityManagerFactory().getObject());
 		return transactionManager;
 	}
-
+	*/
 }
 
