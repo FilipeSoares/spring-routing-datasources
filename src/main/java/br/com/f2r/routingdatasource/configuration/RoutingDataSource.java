@@ -13,9 +13,9 @@ public class RoutingDataSource extends AbstractRoutingDataSource{
 		Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
 		if(authentication!=null && authentication.isAuthenticated()){
 			CustomUserDetails detail = (CustomUserDetails) authentication.getPrincipal();
-			return detail.getConnection();
+			return new String(String.valueOf(detail.getConnection()));
 		}else{
-			return 0;
+			return "0";
 		}
 	}
 
