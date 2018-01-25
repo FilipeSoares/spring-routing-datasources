@@ -1,4 +1,4 @@
-package br.com.f2r.routingdatasource.service.impl;
+package br.com.fo2app.routingdatasource.service.impl;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,11 +13,11 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import br.com.f2r.routingdatasource.model.CustomUserDetails;
-import br.com.f2r.routingdatasource.model.Profile;
-import br.com.f2r.routingdatasource.model.User;
-import br.com.f2r.routingdatasource.repository.UserRepository;
-import br.com.f2r.routingdatasource.service.UserService;
+import br.com.fo2app.routingdatasource.model.CustomUserDetails;
+import br.com.fo2app.routingdatasource.model.Profile;
+import br.com.fo2app.routingdatasource.model.User;
+import br.com.fo2app.routingdatasource.repository.UserRepository;
+import br.com.fo2app.routingdatasource.service.UserService;
 
 @Service
 public class UserServiceImpl implements UserService, UserDetailsService{

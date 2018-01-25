@@ -12,7 +12,7 @@
         http://www.springframework.org/schema/tx
         http://www.springframework.org/schema/tx/spring-tx-4.0.xsd">
 	
-	<context:component-scan base-package="br.com.f2r" />
+	<context:component-scan base-package="br.com.fo2app" />
 	
 	<!-- DataSource -->
 	<bean id="parentDataSource"

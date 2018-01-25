@@ -1,10 +1,10 @@
-package br.com.f2r.routingdatasource.repository;
+package br.com.fo2app.routingdatasource.repository;
 
 import java.util.List;
 
 import org.springframework.stereotype.Repository;
 
-import br.com.f2r.routingdatasource.model.Product;
+import br.com.fo2app.routingdatasource.model.Product;
 
 @Repository
 public interface ProductRepository {

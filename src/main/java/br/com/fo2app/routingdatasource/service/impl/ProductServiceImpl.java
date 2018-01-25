@@ -1,4 +1,4 @@
-package br.com.f2r.routingdatasource.service.impl;
+package br.com.fo2app.routingdatasource.service.impl;
 
 import java.util.List;
 
@@ -6,9 +6,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
-import br.com.f2r.routingdatasource.model.Product;
-import br.com.f2r.routingdatasource.repository.ProductRepository;
-import br.com.f2r.routingdatasource.service.ProductService;
+import br.com.fo2app.routingdatasource.model.Product;
+import br.com.fo2app.routingdatasource.repository.ProductRepository;
+import br.com.fo2app.routingdatasource.service.ProductService;
 
 @Service
 public class ProductServiceImpl implements ProductService{

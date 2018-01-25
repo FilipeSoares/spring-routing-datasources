@@ -1,4 +1,4 @@
-package br.com.f2r.routingdatasource.controller;
+package br.com.fo2app.routingdatasource.controller;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -12,8 +12,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
-import br.com.f2r.routingdatasource.model.CustomUserDetails;
-import br.com.f2r.routingdatasource.service.ProductService;
+import br.com.fo2app.routingdatasource.model.CustomUserDetails;
+import br.com.fo2app.routingdatasource.service.ProductService;
 
 @Controller
 public class MainController {

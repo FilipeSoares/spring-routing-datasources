@@ -1,10 +1,10 @@
-package br.com.f2r.routingdatasource.service;
+package br.com.fo2app.routingdatasource.service;
 
 import java.util.List;
 
 import org.springframework.stereotype.Service;
 
-import br.com.f2r.routingdatasource.model.User;
+import br.com.fo2app.routingdatasource.model.User;
 
 @Service
 public interface UserService {

@@ -1,4 +1,4 @@
-package br.com.f2r.routingdatasource.repository.impl;
+package br.com.fo2app.routingdatasource.repository.impl;
 
 import java.util.List;
 
@@ -8,8 +8,8 @@ import javax.persistence.PersistenceContext;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
-import br.com.f2r.routingdatasource.model.User;
-import br.com.f2r.routingdatasource.repository.UserRepository;
+import br.com.fo2app.routingdatasource.model.User;
+import br.com.fo2app.routingdatasource.repository.UserRepository;
 
 @Repository
 public class UserRepositoryImpl implements UserRepository{

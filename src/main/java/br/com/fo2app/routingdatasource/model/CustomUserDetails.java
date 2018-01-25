@@ -1,4 +1,4 @@
-package br.com.f2r.routingdatasource.model;
+package br.com.fo2app.routingdatasource.model;
 
 import java.util.Collection;
 

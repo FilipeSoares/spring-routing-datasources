@@ -1,4 +1,4 @@
-package br.com.f2r.routingdatasource.configuration;
+package br.com.fo2app.routingdatasource.configuration;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;

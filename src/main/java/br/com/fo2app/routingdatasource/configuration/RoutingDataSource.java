@@ -1,10 +1,10 @@
-package br.com.f2r.routingdatasource.configuration;
+package br.com.fo2app.routingdatasource.configuration;
 
 import org.springframework.jdbc.datasource.lookup.AbstractRoutingDataSource;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 
-import br.com.f2r.routingdatasource.model.CustomUserDetails;
+import br.com.fo2app.routingdatasource.model.CustomUserDetails;
 
 public class RoutingDataSource extends AbstractRoutingDataSource{
 

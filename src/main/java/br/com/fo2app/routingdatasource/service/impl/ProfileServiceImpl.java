@@ -1,4 +1,4 @@
-package br.com.f2r.routingdatasource.service.impl;
+package br.com.fo2app.routingdatasource.service.impl;
 
 import java.util.List;
 
@@ -6,9 +6,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
-import br.com.f2r.routingdatasource.model.Profile;
-import br.com.f2r.routingdatasource.repository.ProfileRepository;
-import br.com.f2r.routingdatasource.service.ProfileService;
+import br.com.fo2app.routingdatasource.model.Profile;
+import br.com.fo2app.routingdatasource.repository.ProfileRepository;
+import br.com.fo2app.routingdatasource.service.ProfileService;
 
 @Service
 public class ProfileServiceImpl implements ProfileService{

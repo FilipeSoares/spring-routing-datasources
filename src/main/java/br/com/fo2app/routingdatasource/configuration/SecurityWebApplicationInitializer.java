@@ -1,4 +1,4 @@
-package br.com.f2r.routingdatasource.configuration;
+package br.com.fo2app.routingdatasource.configuration;
 
 import org.springframework.security.web.context.AbstractSecurityWebApplicationInitializer;
 

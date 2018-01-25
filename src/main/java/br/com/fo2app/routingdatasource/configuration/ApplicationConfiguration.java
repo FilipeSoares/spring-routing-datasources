@@ -1,6 +1,4 @@
-package br.com.f2r.routingdatasource.configuration;
-
-import java.util.Properties;
+package br.com.fo2app.routingdatasource.configuration;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -8,10 +6,6 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.core.env.Environment;
-import org.springframework.jdbc.datasource.DriverManagerDataSource;
-import org.springframework.orm.jpa.JpaTransactionManager;
-import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
-import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.web.servlet.ViewResolver;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
@@ -22,7 +16,7 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 @Configuration
 @EnableTransactionManagement(proxyTargetClass=true)
 @EnableWebMvc
-@ComponentScan(basePackages={"br.com.f2r"})
+@ComponentScan(basePackages={"br.com.fo2app"})
 @PropertySource(value={"classpath:application.properties"})
 public class ApplicationConfiguration extends WebMvcConfigurerAdapter{
 	
