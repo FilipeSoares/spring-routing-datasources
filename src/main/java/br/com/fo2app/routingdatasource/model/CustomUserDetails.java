@@ -4,9 +4,16 @@ import java.util.Collection;
 
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
+/**
+ * Implementation of {@linkplain org.springframework.security.core.userdetails.UserDetails}
+ * 
+ * @author FilipeSoares
+ *
+ */
+public class CustomUserDetails extends org.springframework.security.core.userdetails.User implements UserDetails {
 
-public class CustomUserDetails extends org.springframework.security.core.userdetails.User implements UserDetails{
-
+	private static final long serialVersionUID = 1L;
+	
 	private int connection;
 	
 	public CustomUserDetails(String username, String password, boolean enabled, boolean accountNonExpired,

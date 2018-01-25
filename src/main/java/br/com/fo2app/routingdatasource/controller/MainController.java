@@ -40,31 +40,6 @@ public class MainController {
 		return new ModelAndView("products", "list", ps.list());
 	}
 
-	@RequestMapping(value = "/account", method = RequestMethod.GET)
-	public String getAccountPage() {
-		return "account";
-	}
-
-	@RequestMapping(value = "/card", method = RequestMethod.GET)
-	public String getCardPage() {
-		return "card";
-	}
-
-	@RequestMapping(value = "/category", method = RequestMethod.GET)
-	public String getCategoryPage() {
-		return "category";
-	}
-
-	@RequestMapping(value = "/launch", method = RequestMethod.GET)
-	public String getLaunchPage() {
-		return "launch";
-	}
-
-	@RequestMapping(value = "/dashboard", method = RequestMethod.GET)
-	public String getDashPage() {
-		return "dashboard";
-	}
-
 	@RequestMapping(value = "/denied", method = RequestMethod.GET)
 	public String getDeniedPage() {
 		return "denied";
